@@ -1,3 +1,5 @@
+CaroAI — from “Career” + “O” (open, friendly sound)
+
 npx create-next-app@latest
 no typescript
 yes to eslint, tailwind, turbopack
