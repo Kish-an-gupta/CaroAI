@@ -42,3 +42,5 @@ next-env.d.ts
 
 
 ReadmePer.md
+
+/lib/generated/prisma
