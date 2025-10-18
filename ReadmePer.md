@@ -18,7 +18,21 @@ Neon - used for Postgre database management
 
 Inngest used for managing for background data like etching data for industry standards every week we need to show trending and popular jobs.
 npm i inngest
-To run Database inngest - npx inngest-cli@latest dev
+
+TO RUN DATABASE inngest - npx inngest-cli@latest dev
 
 Installing PRISMA - npm i -D prisma
 then npx prisma init - to initialize project with prisma
+
+
+Creating tables/models in prisma database command: npx prisma migrate dev --name create models
+
+
+Library to create onboardingForm - 
+library React-hook-form - npm i react-hook-form
+and library zod - npm i zod 
+and 1 more library
+npm i @hookform/resolvers - this library to ensure hook-form and zod work fine with each other
+
+
+2.06.00

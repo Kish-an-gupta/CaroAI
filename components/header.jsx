@@ -10,10 +10,13 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { checkUser } from "@/lib/checkUser";
 
-function Header() {
+const Header=async() => {
+  await checkUser();
+
   return (
-    <header className="fixed top-0 w-full border-b bg-background/80 backdrop-blur-md z-50 supports-[backdrop-filter]:bg-background/60">
+    <header suppressHydrationWarning className="fixed top-0 w-full border-b bg-background/80 backdrop-blur-md z-50 supports-[backdrop-filter]:bg-background/60">
       <nav className="flex items-center justify-between px-6 md:px-10 h-16 w-full">
         <Link href="/">
           <Image
@@ -76,13 +79,14 @@ function Header() {
    <div className="flex items-center justify-center h-16">
   <div className="flex items-center justify-center px-2.5 scale-150">
     <UserButton
-      afterSignOutUrl="/"
+      
       appearance={{
         elements: {
           userButtonPopoverCard: "shadow-xl",
           userPreviewMainIdentifier: "font-semibold",
         },
       }}
+      afterSignOutUrl="/"
     />
   </div>
 </div>
