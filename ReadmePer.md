@@ -46,5 +46,8 @@ ReCharts Library - npm i recharts - library to draw charts/graph view of any dat
 npm i date-fns - library to manage and format date
 
 
+To Change Number of Questions for practice we can change from Interview.js File in the prompt we have given.
 
-2.45.00 - timeline
+
+
+3.43.50 - timeline
