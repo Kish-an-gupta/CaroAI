@@ -36,7 +36,9 @@ export default function QuizList({ assessments }) {
                 Review your past quiz performance
               </CardDescription>
             </div>
-            <Button onClick={() => router.push("/interview/mock")}>
+            <Button 
+            className={"hover:cursor-pointer"}
+            onClick={() => router.push("/interview/mock")}>
               Start New Quiz
             </Button>
           </div>
@@ -76,6 +78,7 @@ export default function QuizList({ assessments }) {
         </CardContent>
       </Card>
 
+      {/* Dialog */}
       <Dialog open={!!selectedQuiz} onOpenChange={() => setSelectedQuiz(null)}>
         <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">
           <DialogHeader>
