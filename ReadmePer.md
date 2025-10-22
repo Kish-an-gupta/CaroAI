@@ -48,6 +48,9 @@ npm i date-fns - library to manage and format date
 
 To Change Number of Questions for practice we can change from Interview.js File in the prompt we have given.
 
+Installing Markdown Editor -npm i @uiw/react-md-editor
+
+Installing LIBRARY html2pdf.js - npm i html2pdf.js
 
 
 4.23.05 - timeline

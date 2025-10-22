@@ -8,7 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Textarea } from "@/components/ui/textarea";
 import useFetch from "@/hooks/use-fetch";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Download, Save } from "lucide-react";
+import { Download, Edit, Save } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import EntryForm from "./entry-form";
@@ -16,6 +16,7 @@ import EntryForm from "./entry-form";
 const ResumeBuilder = ({ initialContent }) => {
 
     const [activeTab, setActiveTab] = useState("edit");
+    const [resumeMode, setResumeMode] = useState("preview");
 
     const {
         control,
@@ -259,7 +260,16 @@ const ResumeBuilder = ({ initialContent }) => {
 
           </form>
         </TabsContent>
-        <TabsContent value="preview">Change your password here.</TabsContent>
+        <TabsContent value="preview">
+          <Button 
+            variant="link"
+            type="button"
+            className={"mb-2"}
+          >
+            <Edit className="h-4 w-4" />
+            Edit Resume
+          </Button>
+        </TabsContent>
       </Tabs>
     </div>
   );
