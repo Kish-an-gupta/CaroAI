@@ -49,8 +49,18 @@ npm i date-fns - library to manage and format date
 To Change Number of Questions for practice we can change from Interview.js File in the prompt we have given.
 
 Installing Markdown Editor -npm i @uiw/react-md-editor
+Markdown feature to import the personal info in resume format
 
 Installing LIBRARY html2pdf.js - npm i html2pdf.js
+
+npm install jspdf html2canvas
+
+
+
+
+To see Database open NEON website
+To run application - npm run dev
+To run database - npx inngest-cli@latest dev
 
 
 4.23.05 - timeline
