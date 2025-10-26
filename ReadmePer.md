@@ -64,3 +64,32 @@ To run database - npx inngest-cli@latest dev
 
 
 4.23.05 - timeline
+
+
+
+
+
+/********************************************************************/*******************************/
+Deployment
+
+First deploy on vercel - write all enivironment variables 
+then
+new page
+Inngest - inngest.com/docs/platform/deployment
+then deploy with vercel
+then Installing click Installing Inngest's official Vercel
+then connect/install 
+link existing inngest account 
+select team
+create account
+select vercel deployed app name (caro-ai) - save configuration
+continue to inngest vercel dashboard
+
+Now vercel page - continue to dashboard then setting
+click on deployement protection and disable it.
+
+then go on inngest page - go to apps - click on sync new app 
+enter URL of vercel deployed app and after that /api/inngest(https://caro-ai.vercel.app/)api/inngest
+
+
+deploying done...
